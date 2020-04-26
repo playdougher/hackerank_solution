@@ -21,7 +21,7 @@ The second line contains a single string `s` , of `n` characters that describe h
 
 <img src="http://latex.codecogs.com/gif.latex?2\leq n\leq10^6" border="0"/>
 
-<img src="http://latex.codecogs.com/gif.latex?s[i]\in U,D" border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?s[i] \in U,D" border="0"/>
 
 **Output Format**
 
