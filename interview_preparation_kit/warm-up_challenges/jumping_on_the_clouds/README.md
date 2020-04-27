@@ -36,6 +36,7 @@ Print the minimum number of jumps needed to win the game.
 ```
 
 **Explanation 0:**
+
 Emma must avoid  `c[2]` and `c[5]`  . She can win the game with a minimum of `4`  jumps:
 
 **Solution**:
