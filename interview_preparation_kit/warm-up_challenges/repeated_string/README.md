@@ -20,7 +20,7 @@ The second line contains an integer, `n` .
 
 **Constraints**
 
-![](images.png)
+![](image.png)
 
 
 **Output Format**
