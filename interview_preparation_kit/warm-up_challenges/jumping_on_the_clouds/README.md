@@ -40,7 +40,7 @@ Emma must avoid  `c[2]` and `c[5]`  . She can win the game with a minimum of `4`
 
 **Solution**:
 
-原则：能跳两格就跳两格，否则跳一格。
+原则：能跳两格就跳两格，否则跳一格。  
 边界条件：到倒二个的时候停止。
 
 ```c
