@@ -39,6 +39,10 @@ int minimumSwaps(vector<int> arr) {
 3. 变量设置：
 `visited[]`: 用来记录遍历过的循环，以便在遍历数组的过程中能跳过这些已经计算过的、排好序了的循环。  
 `idx[]`: `idx[5]`若等于3，表明`a`数组中，元素值为5的数组下标为3。  
+4. 复杂度：  
+时间：O(n)  
+空间：O(n)
+
 ```c
 int minimum_swap(int n)
 {

@@ -27,14 +27,11 @@ int main()
     vector<string> nd = split_string(nd_temp);
 
     int n = stoi(nd[0]);
-
     int d = stoi(nd[1]);
-
     string a_temp_temp;
     getline(cin, a_temp_temp);
 
     vector<string> a_temp = split_string(a_temp_temp);
-
     vector<int> a(n);
 
     for (int i = 0; i < n; i++) {
@@ -44,7 +41,6 @@ int main()
     }
 
     vector<int> result = rotLeft(a, d);
-
     for (int i = 0; i < result.size(); i++) {
         fout << result[i];
 
@@ -54,7 +50,6 @@ int main()
     }
 
     fout << "\n";
-
     fout.close();
 
     return 0;
@@ -66,7 +61,6 @@ vector<string> split_string(string input_string) {
     });
 
     input_string.erase(new_end, input_string.end());
-
     while (input_string[input_string.length() - 1] == ' ') {
         input_string.pop_back();
     }
