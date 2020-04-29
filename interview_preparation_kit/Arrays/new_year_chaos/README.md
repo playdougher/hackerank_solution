@@ -49,6 +49,3 @@ void minimumBribes(vector<int> q) {
     cout << count << endl;
 }
 ```
-
-
-
