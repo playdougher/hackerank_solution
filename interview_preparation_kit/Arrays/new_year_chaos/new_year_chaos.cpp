@@ -3,7 +3,9 @@
 using namespace std;
 
 vector<string> split_string(string);
-
+// 要计算插队次数的最小值，只需从最大值开始，计算每个值回退到原来位置所需的步数。
+//idx[] : q数组的数组元素作为下标，idx的值为数组元素的索引。q数组索引从0计算。
+//
 // Complete the minimumBribes function below.
 void minimumBribes(vector<int> q) {
     vector<int> idx(q.size()+1);
@@ -13,15 +15,22 @@ void minimumBribes(vector<int> q) {
     }
 
     int count = 0;
-    for (int val = q.size(); val > 0; ++val) {
-        int step = i-idx[i];
-        if (step > 2) return "Too chaotic";
-        //当前索引值到其最终值所在位置
-        for(int j = idx[i]; j <= i; ++j)
-            --idx[j];
+    for (int val = q.size(); val > 0; --val) {
+        int step = val-1-idx[val];
+        if(!step) continue;
+        if (step > 2) {
+            cout << "Too chaotic\n";
+            return;
+        }
+        //范围：(当前索引值, 其值最终所在位置]，即(idx[val],val-1]
+        //j为元素val在q中的下标，他需要往队后(增大方向)移动到他原来排的位置。
+        for(int j = idx[val]+1; j < val; ++j){
+            --idx[q[j]];
+            q[j-1] = q[j];
+        }
         count += step;
     }
-    return count;
+    cout << count << endl;
 }
 
 int main()
