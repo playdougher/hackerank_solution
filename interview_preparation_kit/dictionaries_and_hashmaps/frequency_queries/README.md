@@ -2,7 +2,7 @@
 
 [题目](https://www.hackerrank.com/challenges/frequency-queries/problem)  
 
-# Solution
+## Solution
 
 **实现思路**  
 O(n):   
