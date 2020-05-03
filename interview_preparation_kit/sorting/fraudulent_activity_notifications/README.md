@@ -15,6 +15,7 @@ O(n*d):
 **注意点** 
 * 取偶数中间两个数平均数时, 结果可能为小数. 
 
+**实现方式**
 ```c
 int activityNotifications(vector<int> expenditure, int d) {
     int ev_od_f = d%2;// odd: 1; even: 0;
