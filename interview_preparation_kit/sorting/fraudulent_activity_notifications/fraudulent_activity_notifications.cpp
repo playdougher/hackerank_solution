@@ -6,52 +6,36 @@ vector<string> split_string(string);
 
 // Complete the activityNotifications function below.
 int activityNotifications(vector<int> expenditure, int d) {
-    vector<int> count_arr(200);
-    int ev_od_f = 0;
-    ev_od_f = d%2 ; // odd: 1; even: 0;
-
+    int ev_od_f = d%2;// odd: 1; even: 0;
     int notif_num = 0;
-    for(int i = 0; i+d <= expenditure.size(); i++){ //ji i+d
-        //五个数字
-        for(int j = i;  j < i+d; j++){
-            count_arr[expenditure[j]]++;
-        }
+    vector<int> count_arr(201); // position 201 for element "200"
 
-        //奇偶
-            //找到中位数
-        int center = 0;
-        int center_num = 0;
-        if(ev_od_f){//odd
-            center_num = d/2+1;
-            for(int j = 0; j < 200; j++){
-                if( center_num >= count_arr[j]){
-                    center_num -= count_arr[j];
-                    center = 2*count_arr[j]; //
-                }
-                else break;
-            }
-        }
-        else{//even
-            center_num = d/2;
-            for(int j = 0; j < 200; j++){
-                if(center_num >= count_arr[j]{
-                    center_num -= count_arr[j];
-                    center = count_arr[j];
-                }
-                else{
-                    center += count_arr[j];
-                    break;
-                }
-            }
-        }
-
-        //比较
-        if(expenditure[i+d] >= center){
-            notif_num++;
-        }
+    for(int i = 0;  i < d-1; i++){ // initiate the first d-1 elements.
+        count_arr[expenditure[i]]++;
     }
-    return notif_num;
 
+    for(int i = 0; i+d-1 < expenditure.size(); i++){ //ji i+d-1
+        count_arr[expenditure[i+d-1]]++; //increase the count of last element.
+
+        int median = 0;
+        int half_d = d/2; // half of d
+        if(ev_od_f) ++half_d;
+
+        int j = 0;
+        for(; j < 200; j++){
+            half_d -= count_arr[j]; 
+            if(half_d <= 0) break;
+        }
+
+        // 偶 && 计数末尾
+        if(half_d == 0 && !ev_od_f) median = j+j+1; 
+        else median = 2*j;
+
+        if(expenditure[i+d] >= median) notif_num++; 
+        count_arr[expenditure[i]]--; // decrease the count of first element
+    }
+
+    return notif_num;
 }
 
 int main()
