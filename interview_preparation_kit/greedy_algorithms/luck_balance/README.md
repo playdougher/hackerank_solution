@@ -12,6 +12,7 @@ T[i]为0的都算作输
 if(arr.size() > k) //[x] (arr.size()-k) > 0, 会是很大的正数, 因为size_t只能是正数
 
 **实现方式**  
+O(n logn):  
 ```c
 int luckBalance(int k, vector<vector<int>> contests) {
     int ans = 0;
