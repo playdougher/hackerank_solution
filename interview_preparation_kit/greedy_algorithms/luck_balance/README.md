@@ -1,8 +1,8 @@
 # Luck Balance
 
 [题目](https://www.hackerrank.com/challenges/luck-balance/problem)  
-题目要求最大luck. luck通过输比赛获得. 赢了会浪费luck. 
-同时提供一个k值, T[i]为1的比赛可以有k个让它输. 其他为1只能赢.
+题目要求最大luck. luck通过输比赛获得. 赢了会浪费luck.  
+同时提供一个k值, T[i]为1的比赛可以有k个让它输. 其他为1只能赢.  
 T[i]为0的都算作输
 
 ## Solution
