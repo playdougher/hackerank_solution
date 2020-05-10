@@ -1,3 +1,22 @@
+# Swap Nodes [Algo]
+
+[题目](https://www.hackerrank.com/challenges/swap-nodes-algo/problem)  
+
+**输入格式：**  
+n: 表示有n个值大于0的节点(输入n组孩子)
+a,b: a, b为节点的值, 若为空,值为-1
+t: t个k
+k: 深度为[k, 2k, 3k,...]的节点进行swap操作
+
+## Solution
+
+**实现思路**  
+设置 int l[MAXN], r[MAXN]; // l[i] : i 's left child
+设置 int d[MAXN]; //depth
+进行交换操作时直接swap(l[i], r[i]), 将i的左右子树互换. 
+
+**实现方式**  
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -40,4 +59,4 @@ int main(){
         cout << endl;
     }
 }
-
+```
