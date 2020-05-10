@@ -15,7 +15,7 @@
 **实现思路**  
 ```c
 * 设置 int l[MAXN], r[MAXN]; // l[i] : i 's left child  
-设置 int d[MAXN]; //depth
+  设置 int d[MAXN]; //depth
 * 进行交换操作时直接swap(l[i], r[i]), 将i的左右子树互换. 
 ```
 
