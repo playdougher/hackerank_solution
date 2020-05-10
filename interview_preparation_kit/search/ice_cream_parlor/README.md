@@ -9,10 +9,12 @@ note:
 ## Solution
 
 **实现思路**  
+```c
 * 若结果为ci, cj. 则有cj = money-ci. 
 * 哈希表对数组元素计数
 * 若ci==cj, ci的计数应为2
 * 若ci!=cj, ci, cj计数各为1
+```
 
 **实现方式**  
 ```c
