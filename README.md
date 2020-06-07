@@ -1,6 +1,5 @@
 # hackerank_solution
 
-```markdown
 [.](https://github.com/playdougher/hackerank_solution)  
 ├── [interview_preparation_kit](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit)  
 │   ├── [Arrays](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/Arrays)  
@@ -53,4 +52,4 @@
 │   │   └── [sock_merchant](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/sock_merchant)  
 │   └──
 └── README.md  
-```
+
