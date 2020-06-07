@@ -51,6 +51,6 @@
 │   │   ├── README.md  
 │   │   ├── [repeated_string](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/repeated_string)  
 │   │   └── [sock_merchant](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/sock_merchant)  
-│   └── 
+│   └──   
 └── README.md  
 
