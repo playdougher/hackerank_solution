@@ -44,11 +44,10 @@
 │   │   ├── [making_anagrams](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/string_manipulation/making_anagrams)  
 │   │   ├── [sherlock_and_the_valid_string](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/string_manipulation/sherlock_and_the_valid_string)  
 │   │   └── [special_string_again](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/string_manipulation/special_string_again)  
-│   ├── [warm-up_challenges](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges)  
-│   │   ├── [counting_valleys](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/counting_valleys)  
-│   │   ├── [jumping_on_the_clouds](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/jumping_on_the_clouds)  
-│   │   ├── README.md  
-│   │   ├── [repeated_string](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/repeated_string)  
-│   │   └── [sock_merchant](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/sock_merchant)  
-│   └── template.md  
+│   └── [warm-up_challenges](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges)  
+│       ├── [counting_valleys](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/counting_valleys)  
+│       ├── [jumping_on_the_clouds](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/jumping_on_the_clouds)  
+│       ├── README.md  
+│       ├── [repeated_string](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/repeated_string)  
+│       └── [sock_merchant](https://github.com/playdougher/hackerank_solution/tree/master/interview_preparation_kit/warm-up_challenges/sock_merchant)  
 └── README.md  
