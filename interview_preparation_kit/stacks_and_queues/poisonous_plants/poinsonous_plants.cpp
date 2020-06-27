@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+ * T(n logn)
+ */
 #define MAX 100000
 
 set<int> alive, going_to_die, next_to_die;
@@ -16,7 +19,7 @@ int main(){
     }
     height[0] = inf;
 
-    //initiate set "alive" and set set "going_to_die"
+    // initiate set "alive" and set set "going_to_die"
     for(i=1; i<=n; i++){
         alive.insert(i);
         if(height[i] > height[i-1]) going_to_die.insert(i);
@@ -47,6 +50,3 @@ int main(){
     printf("%d\n", day);
     return 0;
 }
-
-
-
